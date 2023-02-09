@@ -1,0 +1,92 @@
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Lobster', sans-serif;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+}
+
+.nav ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 400px;
+    padding: 15px 10px;
+    transition: all 0.3s ease-out;
+}
+
+.nav ul li:nth-child(1) a {
+    border-left: 10px solid #5366c3;
+    background: linear-gradient(to right, #5366c3 50%, #dbe1e2 50%);
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.nav ul li:nth-child(1) a:hover {
+    background-position: left;
+    color: #fff;
+}
+
+.nav ul li:nth-child(2) a {
+    border-left: 10px solid #3f83c0;
+    background: linear-gradient(to right, #3f83c0 50%, #dbe1e2 50%);
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.nav ul li:nth-child(2) a:hover {
+    background-position: left;
+    color: #fff;
+}
+
+.nav ul li:nth-child(3) a {
+    border-left: 10px solid #2aa1bd;
+    background: linear-gradient(to right, #2aa1bd 50%, #dbe1e2 50%);
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.nav ul li:nth-child(3) a:hover {
+    background-position: left;
+    color: #fff;
+}
+
+.nav ul li:nth-child(4) a {
+    border-left: 10px solid #15bfbb;
+    background: linear-gradient(to right, #15bfbb 50%, #dbe1e2 50%);
+    background-size: 200% 100%;
+    background-position: right;
+}
+
+.nav ul li:nth-child(4) a:hover {
+    background-position: left;
+    color: #fff;
+}
